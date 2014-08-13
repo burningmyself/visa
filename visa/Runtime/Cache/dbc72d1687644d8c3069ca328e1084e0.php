@@ -274,15 +274,15 @@
                             <div class="row">
                                 <div class="input-group">
                                     <span class="input-group-addon">家庭住址(国家)(请填写常住地址)</span>
-                                    <input type="text" class="form-control" name="homecountry" placeholder="Username">
+                                    <input type="text" class="form-control" name="homecountry" placeholder="请输入国家">
                                     <span class="input-group-addon">省/市</span>
-                                    <input type="text" class="form-control" name="homeprovince"  placeholder="Username">
+                                    <input type="text" class="form-control" name="homeprovince"  placeholder="请输入省或直辖市">
                                     <span class="input-group-addon">市/县</span>
-                                    <input type="text" class="form-control" name="homecity"  placeholder="Username">
+                                    <input type="text" class="form-control" name="homecity"  placeholder="请输入地级市或者县">
                                     <span class="input-group-addon">街道,单元号码</span>
-                                    <input type="text" class="form-control" name="homestreet"  placeholder="Username">
+                                    <input type="text" class="form-control" name="homestreet"  placeholder="请输入街道地址">
                                     <span class="input-group-addon">邮编</span>
-                                    <input type="text" class="form-control" name="homezipcode"  placeholder="Username">
+                                    <input type="text" class="form-control" name="homezipcode"  placeholder="请输入邮政编码">
                                 </div>
                             </div><!--/row-->
 
@@ -318,11 +318,11 @@
                         <div class="row">
                             <div class="input-group">
                                 <span class="input-group-addon">护照签发地(国家)</span>
-                                <input type="text" name="portcountry" class="form-control" placeholder="请您输入护照签发地">
+                                <input type="text" name="portcountry" class="form-control" placeholder="请您输入护照签发国家">
                                 <span class="input-group-addon">护照签发地(省市)</span>
-                                <input type="text" name="portprovince" class="form-control" placeholder="请您输入护照签发地">
+                                <input type="text" name="portprovince" class="form-control" placeholder="请您输入护照签发省或直辖市">
                                 <span class="input-group-addon">护照签发地(市县)</span>
-                                <input type="text" name="portcity" class="form-control" placeholder="请您输入护照签发地">
+                                <input type="text" name="portcity" class="form-control" placeholder="请您输入护照签发地级市或县">
                             </div>
                         </div><!--/row-->
 
@@ -331,7 +331,7 @@
                                     <span class="input-group-addon">护照签发日期</span>
                                     <input type="text" name="portstartdate" onClick="WdatePicker()" class="form-control" placeholder="请您输入护照签发日期">
                                     <span class="input-group-addon">护照有效期至</span>
-                                    <input type="text" name="portenddate" onClick="WdatePicker()" class="form-control" placeholder="请您输入护照有效期至">
+                                    <input type="text" name="portenddate" onClick="WdatePicker()" class="form-control" placeholder="请您输入护照有效期">
                                 </div>
                             </div><!--/row-->
 
@@ -346,19 +346,19 @@
                                 </div>
                                 <div class="input-group">
                                     <span class="input-group-addon">遗失的护照1号码:</span>
-                                    <input type="text" name="portlostno1" class="form-control" placeholder="如有遗失,入护照签发国家">
+                                    <input type="text" name="portlostno1" class="form-control" placeholder="遗失护照号">
                                     <span class="input-group-addon">护照签发国家:</span>
-                                    <input type="text" name="portlostcountry1" class="form-control" placeholder="请输入护照签发国家">
+                                    <input type="text" name="portlostcountry1" class="form-control" placeholder="遗失护照签发国家">
                                     <span class="input-group-addon">丢失原因：</span>
-                                    <input type="text" name="portlostexplain1" class="form-control" placeholder="请输入护照签发国家">
+                                    <input type="text" name="portlostexplain1" class="form-control" placeholder="遗失护照原因">
                                 </div>
                                 <div class="input-group">
                                     <span class="input-group-addon">遗失的护照2号码:</span>
-                                    <input type="text" name="portlostno2" class="form-control" placeholder="如有遗失,入护照签发国家">
+                                    <input type="text" name="portlostno2" class="form-control" placeholder="遗失护照号">
                                     <span class="input-group-addon">护照签发国家:</span>
-                                    <input type="text" name="portlostcountry2" class="form-control" placeholder="请输入护照签发国家">
+                                    <input type="text" name="portlostcountry2" class="form-control" placeholder="遗失护照签发国家">
                                     <span class="input-group-addon">丢失原因：</span>
-                                    <input type="text" name="portlostexplain2" class="form-control" placeholder="请输入护照签发国家">
+                                    <input type="text" name="portlostexplain2" class="form-control" placeholder="遗失护照的原因">
                                 </div>
                             </div><!--/row-->
 
@@ -373,29 +373,25 @@
                             <div class="input-group">
                                 <span class="input-group-addon">您是否制定了具体的旅行计划?</span>
                                 <select name="fee-offarder"  class="form-control">
-                                    <option value="0">是</option>
-                                    <option value="1">否</option>
+                                    <option value="1">是</option>
+                                    <option value="0">否</option>
                                 </select>
                                 <span class="input-group-addon">入境美国时间?</span>
-                                <input type="text" class="form-control" placeholder="请输入入境美国时间(根据预订行程填写) (日-月-年)">
-                                <span class="input-group-addon">抵达美国航班?</span>
-                                <input type="text" class="form-control" placeholder="请输入入境美国时间(根据预订行程填写) (日-月-年)">
+                                <input type="text" class="form-control" placeholder="入境美国时间(根据预订行程填写)">
                                 <span class="input-group-addon">抵达美国城市?</span>
-                                <input type="text" class="form-control" placeholder="请输入入境美国时间(根据预订行程填写) (日-月-年)">
+                                <input type="text" class="form-control" placeholder="抵达美国城市?">
 
                                 <span class="input-group-addon">离开美国时间?</span>
-                                <input type="text" class="form-control" placeholder="请输入入境美国时间(根据预订行程填写) (日-月-年)">
-                                <span class="input-group-addon">离开美国航班?</span>
-                                <input type="text" class="form-control" placeholder="请输入入境美国时间(根据预订行程填写) (日-月-年)">
+                                <input type="text" class="form-control" placeholder="离开美国的时间?">
                                 <span class="input-group-addon">从美国城市离开?</span>
-                                <input type="text" class="form-control" placeholder="请输入入境美国时间(根据预订行程填写) (日-月-年)">
+                                <input type="text" class="form-control" placeholder="从美国哪个城市离开?">
 
                                 <!--选择否-->
                                 <span class="input-group-addon">计划入境美国时间?</span>
-                                <input type="text" class="form-control" placeholder="请输入入境美国时间(根据预订行程填写) (日-月-年)">
+                                <input type="text" class="form-control" placeholder="计划入境美国时间">
 
                                 <span class="input-group-addon">计划在美停留时间(天)?</span>
-                                <input type="text" class="form-control" placeholder="请输入入境美国时间(根据预订行程填写) (日-月-年)">
+                                <input type="text" class="form-control" placeholder="计划在美停留时间(天)?">
 
                             </div>
                         </div><!--/row-->
@@ -403,7 +399,7 @@
                         <div class="row">
                             <div class="input-group">
                                 <span class="input-group-addon">打算访问美国哪些城市?</span>
-                                <input type="text" class="form-control" placeholder="赴美同行人姓名,与您的关系?是否一同申请签证?">
+                                <input type="text" class="form-control" placeholder="打算访问美国哪些城市?">
                             </div>
                         </div><!--/row-->
 

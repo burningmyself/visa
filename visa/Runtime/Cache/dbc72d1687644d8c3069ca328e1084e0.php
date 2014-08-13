@@ -138,21 +138,18 @@
                         <h3 class="panel-title">个人基本信息</h3>
                     </div>
                     <div class="panel-body">
-                        <div class="row">
-                            <div class="input-group">
-                                <span class="input-group-addon">身份证号码</span>
-                                <input type="text" name="card-no" class="form-control" placeholder="请输入身份证号">
-                            </div>
-                        </div><!--/row-->
 
                         <div class="row">
                             <div class="input-group">
                                 <span class="input-group-addon">姓名(中文)</span>
                                 <input type="text" name="username" class="form-control" placeholder="请输入您的中文姓名(要与护照一致)">
                                 <span class="input-group-addon">姓名(英文或者拼音)</span>
-                                <input type="text" name="enname" class="form-control" placeholder="请输入您的姓名及姓名拼音(要与护照一致)">
+                                <input type="text" name="enname" class="form-control" placeholder="请输入您的姓名及姓名拼音(姓和名请用空格分开)">
                             </div>
                         </div><!--/row-->
+
+
+
 
                         <div class="row">
                             <div class="input-group">
@@ -166,10 +163,32 @@
 
                         <div class="row">
                             <div class="input-group">
-                                <span class="input-group-addon">国籍</span>
-                                <input type="text" name="country" class="form-control" placeholder="请输入您的国籍">
+                                <span class="input-group-addon">性别</span>
+                                <select name="gender" class="form-control">
+                                    <option value="1">男</option>
+                                    <option value="2">女</option>
+                                </select>
                             </div>
                         </div><!--/row-->
+
+
+                        <div class="row">
+                            <div class="input-group">
+                                <span class="input-group-addon">婚姻状况</span>
+                                <select name="maritalstatus" class="form-control">
+                                    <option value="1">已婚</option>
+                                    <option value="2">普通法律婚姻</option>
+                                    <option value="3">民事婚姻/国内同居</option>
+                                    <option value="4">单身(未婚)</option>
+                                    <option value="5">丧偶</option>
+                                    <option value="6">离异</option>
+                                    <option value="7">合法分居</option>
+                                    <option value="0">其他</option>
+                                </select>
+                            </div>
+                        </div><!--/row-->
+
+
 
                             <div class="row">
                                 <div class="input-group">
@@ -184,31 +203,14 @@
                                 </div>
                             </div><!--/row-->
 
-                            <div class="row">
-                                <div class="input-group">
-                                    <span class="input-group-addon">婚姻状况</span>
-                                    <select name="maritalstatus" class="form-control">
-                                        <option value="1">已婚</option>
-                                        <option value="2">普通法律婚姻</option>
-                                        <option value="3">民事婚姻/国内同居</option>
-                                        <option value="4">单身(未婚)</option>
-                                        <option value="5">丧偶</option>
-                                        <option value="6">离异</option>
-                                        <option value="7">合法分居</option>
-                                        <option value="0">其他</option>
-                                    </select>
-                                </div>
-                            </div><!--/row-->
+                        <div class="row">
+                            <div class="input-group">
+                                <span class="input-group-addon">国籍</span>
+                                <input type="text" name="country" class="form-control" placeholder="请输入您的国籍">
+                            </div>
+                        </div><!--/row-->
 
-                            <div class="row">
-                                <div class="input-group">
-                                    <span class="input-group-addon">性别</span>
-                                    <select name="gender" class="form-control">
-                                        <option value="1">男</option>
-                                        <option value="2">女</option>
-                                    </select>
-                                </div>
-                            </div><!--/row-->
+
 
                             <div class="row">
                                 <div class="input-group">
@@ -222,6 +224,8 @@
                                 </div>
                             </div><!--/row-->
 
+
+
                             <div class="row">
                                 <div class="input-group">
                                     <span class="input-group-addon">您是否持有其他国籍的护照? </span>
@@ -233,6 +237,13 @@
                                     <input type="text" name="othercountrypassport" class="form-control" placeholder="如果回答是,请告知护照号码：">
                                 </div>
                             </div><!--/row-->
+
+                        <div class="row">
+                            <div class="input-group">
+                                <span class="input-group-addon">身份证号码</span>
+                                <input type="text" name="card-no" class="form-control" placeholder="请输入身份证号">
+                            </div>
+                        </div><!--/row-->
 
 
                             <div class="row">
@@ -259,6 +270,7 @@
                                 </div>
                             </div><!--/row-->
 
+
                             <div class="row">
                                 <div class="input-group">
                                     <span class="input-group-addon">家庭住址(国家)(请填写常住地址)</span>
@@ -271,7 +283,6 @@
                                     <input type="text" class="form-control" name="homestreet"  placeholder="Username">
                                     <span class="input-group-addon">邮编</span>
                                     <input type="text" class="form-control" name="homezipcode"  placeholder="Username">
-
                                 </div>
                             </div><!--/row-->
 
@@ -354,9 +365,62 @@
                             <div class="row">
                                 <div class="input-group">
                                     <span class="input-group-addon">此行目的</span>
-                                    <input type="text" name="travel-for" class="form-control" placeholder="请您输入此行目的">
+                                    <input type="text" name="tripintent" class="form-control" placeholder="请您输入此行目的">
                                 </div>
                             </div><!--/row-->
+
+                        <div class="row">
+                            <div class="input-group">
+                                <span class="input-group-addon">您是否制定了具体的旅行计划?</span>
+                                <select name="fee-offarder"  class="form-control">
+                                    <option value="0">是</option>
+                                    <option value="1">否</option>
+                                </select>
+                                <span class="input-group-addon">入境美国时间?</span>
+                                <input type="text" class="form-control" placeholder="请输入入境美国时间(根据预订行程填写) (日-月-年)">
+                                <span class="input-group-addon">抵达美国航班?</span>
+                                <input type="text" class="form-control" placeholder="请输入入境美国时间(根据预订行程填写) (日-月-年)">
+                                <span class="input-group-addon">抵达美国城市?</span>
+                                <input type="text" class="form-control" placeholder="请输入入境美国时间(根据预订行程填写) (日-月-年)">
+
+                                <span class="input-group-addon">离开美国时间?</span>
+                                <input type="text" class="form-control" placeholder="请输入入境美国时间(根据预订行程填写) (日-月-年)">
+                                <span class="input-group-addon">离开美国航班?</span>
+                                <input type="text" class="form-control" placeholder="请输入入境美国时间(根据预订行程填写) (日-月-年)">
+                                <span class="input-group-addon">从美国城市离开?</span>
+                                <input type="text" class="form-control" placeholder="请输入入境美国时间(根据预订行程填写) (日-月-年)">
+
+                                <!--选择否-->
+                                <span class="input-group-addon">计划入境美国时间?</span>
+                                <input type="text" class="form-control" placeholder="请输入入境美国时间(根据预订行程填写) (日-月-年)">
+
+                                <span class="input-group-addon">计划在美停留时间(天)?</span>
+                                <input type="text" class="form-control" placeholder="请输入入境美国时间(根据预订行程填写) (日-月-年)">
+
+                            </div>
+                        </div><!--/row-->
+
+                        <div class="row">
+                            <div class="input-group">
+                                <span class="input-group-addon">打算访问美国哪些城市?</span>
+                                <input type="text" class="form-control" placeholder="赴美同行人姓名,与您的关系?是否一同申请签证?">
+                            </div>
+                        </div><!--/row-->
+
+                        <div class="row">
+                            <div class="input-group">
+                                <span class="input-group-addon">在美国你的联系地址</span>
+                                <input type="text" class="form-control" name="homecountry" placeholder="Username">
+                                <span class="input-group-addon">省/市</span>
+                                <input type="text" class="form-control" name="homeprovince"  placeholder="Username">
+                                <span class="input-group-addon">市/县</span>
+                                <input type="text" class="form-control" name="homecity"  placeholder="Username">
+                                <span class="input-group-addon">街道,单元号码</span>
+                                <input type="text" class="form-control" name="homestreet"  placeholder="Username">
+                                <span class="input-group-addon">邮编</span>
+                                <input type="text" class="form-control" name="homezipcode"  placeholder="Username">
+                            </div>
+                        </div><!--/row-->
 
                             <div class="row">
                                 <div class="input-group">
@@ -371,6 +435,7 @@
                                     <input type="text" name="offarder-rela" class="form-control" placeholder="请您输入负担人与您的关系?">
                                 </div>
                             </div><!--/row-->
+
                             <div class="row">
                                 <div class="input-group">
                                     <span class="input-group-addon">赴美同行人姓名,与您的关系?是否一同申请签证?</span>
@@ -380,46 +445,25 @@
 
                             <div class="row">
                                 <div class="input-group">
-                                    <span class="input-group-addon">入境美国时间(根据预订行程填写) (日-月-年)</span>
-                                    <input type="text" class="form-control" placeholder="请输入入境美国时间(根据预订行程填写) (日-月-年)">
-                                </div>
-                            </div><!--/row-->
-
-                            <div class="row">
-                                <div class="input-group">
-                                    <span class="input-group-addon">拟在美停留时间</span>
-                                    <input type="text" class="form-control" placeholder="请您输入拟在美停留时间">
+                                    <span class="input-group-addon">你是否是一个团体访问美国?</span>
+                                    <select name="us-tax-option"  class="form-control">
+                                        <option value="0">否</option>
+                                        <option value="1">是</option>
+                                    </select>
+                                    <span class="input-group-addon">如是,请提供团体的名字?</span>
+                                    <input type="text" name="taxno" class="form-control" placeholder="如有请提供纳税人身份号码">
                                 </div>
                             </div><!--/row-->
 
                         </div>
                     </div>
 
+
                 <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">在美国的被访问者之姓名及联系方式(如有直系亲属则填写,若参团,由我社代填)</h3>
-                        </div>
+                    <div class="panel-heading">
+                        <h3 class="panel-title">亲属关系</h3>
+                    </div>
                     <div class="panel-body">
-                        <div class="row">
-                            <div class="input-group">
-                                <span class="input-group-addon">姓名</span>
-                                <input type="text" class="form-control" placeholder="Username">
-                                <span class="input-group-addon">住宅电话</span>
-                                <input type="text" class="form-control" placeholder="Username">
-                                <span class="input-group-addon">工作电话</span>
-                                <input type="text" class="form-control" placeholder="Username">
-                                <span class="input-group-addon">移动电话</span>
-                                <input type="text" class="form-control" placeholder="Username">
-                            </div>
-                        </div><!--/row-->
-
-                        <div class="row">
-                            <div class="input-group">
-                                <span class="input-group-addon">在美期间住址(若参团,由我社代填)</span>
-                                <input type="text" class="form-control" placeholder="Username">
-                            </div>
-                        </div><!--/row-->
-
                         <div class="row">
                             <div class="input-group">
                                 <span class="input-group-addon">您是否去过美国?</span>
@@ -434,28 +478,6 @@
                             </div>
                         </div><!--/row-->
 
-                        <div class="row">
-                            <div class="input-group">
-                                <span class="input-group-addon">您是否持有或曾经持有美国驾照? </span>
-                                <select name="gender" class="form-control">
-                                    <option value="0">否</option>
-                                    <option value="1">是</option>
-                                </select>
-                                <span class="input-group-addon">如果回答是,请提供驾照号码:</span>
-                                <input type="text" class="form-control" placeholder="Username">
-                                <span class="input-group-addon">驾照所属的州名：</span>
-                                <input type="text" class="form-control" placeholder="Username">
-                            </div>
-                        </div><!--/row-->
-
-                    </div>
-                    </div>
-
-                <div class="panel panel-success">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">亲属关系</h3>
-                    </div>
-                    <div class="panel-body">
 
                         <div class="row">
                             <div class="input-group">
@@ -551,8 +573,54 @@
                             </div>
                         </div><!--/row-->
 
+                    </div>
+                </div>
+
+
+                <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">在美国的被访问者之姓名及联系方式(如有直系亲属则填写,若参团,由我社代填)</h3>
                         </div>
-                        </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="input-group">
+                                <span class="input-group-addon">姓名</span>
+                                <input type="text" class="form-control" placeholder="Username">
+                                <span class="input-group-addon">住宅电话</span>
+                                <input type="text" class="form-control" placeholder="Username">
+                                <span class="input-group-addon">工作电话</span>
+                                <input type="text" class="form-control" placeholder="Username">
+                                <span class="input-group-addon">移动电话</span>
+                                <input type="text" class="form-control" placeholder="Username">
+                            </div>
+                        </div><!--/row-->
+
+                        <div class="row">
+                            <div class="input-group">
+                                <span class="input-group-addon">在美期间住址(若参团,由我社代填)</span>
+                                <input type="text" class="form-control" placeholder="Username">
+                            </div>
+                        </div><!--/row-->
+
+
+                        <div class="row">
+                            <div class="input-group">
+                                <span class="input-group-addon">您是否持有或曾经持有美国驾照? </span>
+                                <select name="gender" class="form-control">
+                                    <option value="0">否</option>
+                                    <option value="1">是</option>
+                                </select>
+                                <span class="input-group-addon">如果回答是,请提供驾照号码:</span>
+                                <input type="text" class="form-control" placeholder="Username">
+                                <span class="input-group-addon">驾照所属的州名：</span>
+                                <input type="text" class="form-control" placeholder="Username">
+                            </div>
+                        </div><!--/row-->
+
+                    </div>
+                    </div>
+
+
 
                 <div class="panel panel-success">
                 <div class="panel-heading">
@@ -1048,27 +1116,6 @@
                     <div class="row">
                         <div class="input-group">
                             <span class="input-group-addon" style="color:red;text-align: left;">对上述任何问题的肯定回答并不自动意味着您无资格得到签证，但您的回答中如有任何一项是肯定的，您本人要到签证处当面说明。</span>
-                        </div>
-                    </div><!--/row-->
-
-                    <div class="row">
-                        <div class="input-group">
-                            <span class="input-group-addon">曾用名</span>
-                            <input type="text" class="form-control" placeholder="Username">
-                        </div>
-                    </div><!--/row-->
-
-                    <div class="row">
-                        <div class="input-group">
-                            <span class="input-group-addon">曾用名</span>
-                            <input type="text" class="form-control" placeholder="Username">
-                        </div>
-                    </div><!--/row-->
-
-                    <div class="row">
-                        <div class="input-group">
-                            <span class="input-group-addon">曾用名</span>
-                            <input type="text" class="form-control" placeholder="Username">
                         </div>
                     </div><!--/row-->
                 </div>

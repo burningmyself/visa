@@ -1,0 +1,235 @@
+[ 2014-08-04T11:27:47+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003261s ]
+SQL: SHOW COLUMNS FROM `visa_question` [ RunTime:0.122646s ]
+SQL: SELECT * FROM `visa_question`  [ RunTime:0.015416s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.103717s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103888s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.025220s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001601s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000798s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.029155s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001250s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001375s ]
+
+[ 2014-08-04T11:27:50+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `visa_question` [ RunTime:0.002395s ]
+SQL: SELECT * FROM `visa_question`  [ RunTime:0.000373s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010006s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000492s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000474s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000360s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002195s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000648s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2014-08-04T11:46:15+08:00 ] 127.0.0.1 /visaadmin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001198s ]
+ERR: 无法加载模块:visaadmin
+
+[ 2014-08-04T11:50:40+08:00 ] 127.0.0.1 /visaadmin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+ERR: 无法加载模块:article
+
+[ 2014-08-04T11:50:40+08:00 ] 127.0.0.1 /visaadmin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+ERR: 无法加载模块:article
+
+[ 2014-08-04T11:50:41+08:00 ] 127.0.0.1 /visaadmin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+ERR: 无法加载模块:article
+
+[ 2014-08-04T11:54:50+08:00 ] 127.0.0.1 /visaadmin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
+SQL: SHOW COLUMNS FROM `visa_question` [ RunTime:0.038694s ]
+SQL: SELECT * FROM `visa_question`  [ RunTime:0.009958s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011945s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000697s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000766s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000567s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005067s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000956s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001065s ]
+
+[ 2014-08-04T11:55:05+08:00 ] 127.0.0.1 /visaadmin.php/Visaadmin.php
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.235528s ]
+INFO: [ route_check ] --END-- [ RunTime:0.235676s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+NOTIC: [8] Undefined variable: group G:\GitHubSpace\visa\ThinkPHP\Lib\Core\App.class.php 第 95 行.
+ERR: 无法加载模块:Visaadmin.php
+
+[ 2014-08-04T11:58:03+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `visa_question` [ RunTime:0.110746s ]
+SQL: SELECT * FROM `visa_question`  [ RunTime:0.001371s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013671s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003308s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000808s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000543s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000758s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005725s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000855s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002784s ]
+
+[ 2014-08-04T11:58:27+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+SQL: SHOW COLUMNS FROM `visa_question` [ RunTime:0.003556s ]
+SQL: SELECT * FROM `visa_question`  [ RunTime:0.000310s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009813s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000500s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000567s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000409s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000599s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002380s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000665s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000772s ]
+
+[ 2014-08-04T20:44:22+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001911s ]
+SQL: SHOW COLUMNS FROM `visa_question` [ RunTime:0.003254s ]
+SQL: SELECT * FROM `visa_question`  [ RunTime:0.000586s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.130145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130689s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.005715s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002599s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002142s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015539s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002829s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003317s ]
+
+[ 2014-08-04T20:44:22+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001914s ]
+SQL: SHOW COLUMNS FROM `visa_question` [ RunTime:0.026221s ]
+SQL: SELECT * FROM `visa_question`  [ RunTime:0.000521s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.245848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.246336s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003565s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003220s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003931s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016136s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003280s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003684s ]
+
+[ 2014-08-04T22:53:25+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001684s ]
+SQL: SHOW COLUMNS FROM `visa_question` [ RunTime:0.004620s ]
+SQL: SELECT * FROM `visa_question`  [ RunTime:0.000663s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018909s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001024s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001097s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000834s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005710s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001474s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001806s ]
+
+[ 2014-08-04T22:53:48+08:00 ] 127.0.0.1 /index.php/Article/read/2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.045651s ]
+INFO: [ route_check ] --END-- [ RunTime:0.045947s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001717s ]
+SQL: SHOW COLUMNS FROM `visa_question` [ RunTime:0.003862s ]
+SQL: SELECT * FROM `visa_question` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000507s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023613s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001306s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000949s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000583s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004759s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001233s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001507s ]
+
+[ 2014-08-04T22:53:48+08:00 ] 127.0.0.1 /index.php/dist/js/bootstrap.min.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002067s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002396s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001554s ]
+ERR: 无法加载模块:dist
+
+[ 2014-08-04T22:53:48+08:00 ] 127.0.0.1 /index.php/assets/js/ie10-viewport-bug-workaround.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001821s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002114s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001409s ]
+ERR: 无法加载模块:assets
+
+[ 2014-08-04T22:53:48+08:00 ] 127.0.0.1 /index.php/assets/js/docs.min.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001886s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002166s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003805s ]
+ERR: 无法加载模块:assets
+

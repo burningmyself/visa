@@ -1,0 +1,82 @@
+[ 2014-08-16T12:32:07+08:00 ] 127.0.0.1 /visaadmin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002238s ]
+SQL: SHOW COLUMNS FROM `visa_question` [ RunTime:0.025294s ]
+SQL: SELECT * FROM `visa_question`  [ RunTime:0.003299s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017222s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001021s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001039s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000958s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005004s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001498s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001739s ]
+
+[ 2014-08-16T12:32:09+08:00 ] 127.0.0.1 /visaadmin.php/Question/read
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001819s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002118s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001499s ]
+SQL: SHOW COLUMNS FROM `visa_question` [ RunTime:0.004458s ]
+SQL: SELECT * FROM `visa_question` LIMIT 0,20   [ RunTime:0.000667s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visa_question` LIMIT 1   [ RunTime:0.000658s ]
+
+[ 2014-08-16T12:32:52+08:00 ] 127.0.0.1 /visaadmin.php/Order/read
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001655s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001946s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001712s ]
+SQL: SHOW COLUMNS FROM `visa_userinfo` [ RunTime:0.016813s ]
+SQL: SELECT * FROM `visa_userinfo` LIMIT 0,20   [ RunTime:0.001628s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visa_userinfo` LIMIT 1   [ RunTime:0.000482s ]
+
+[ 2014-08-16T22:54:07+08:00 ] 127.0.0.1 /visaadmin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+SQL: SHOW COLUMNS FROM `visa_question` [ RunTime:0.005323s ]
+SQL: SELECT * FROM `visa_question`  [ RunTime:0.002686s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012963s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000823s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000869s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000608s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004070s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001233s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001487s ]
+
+[ 2014-08-16T22:54:08+08:00 ] 127.0.0.1 /visaadmin.php/Question/read
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001450s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001752s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001451s ]
+SQL: SHOW COLUMNS FROM `visa_question` [ RunTime:0.005195s ]
+SQL: SELECT * FROM `visa_question` LIMIT 0,20   [ RunTime:0.000943s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visa_question` LIMIT 1   [ RunTime:0.001087s ]
+
+[ 2014-08-16T22:54:11+08:00 ] 127.0.0.1 /visaadmin.php/Order/read
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001340s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001616s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001300s ]
+SQL: SHOW COLUMNS FROM `visa_userinfo` [ RunTime:0.012235s ]
+SQL: SELECT * FROM `visa_userinfo` LIMIT 0,20   [ RunTime:0.004948s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visa_userinfo` LIMIT 1   [ RunTime:0.000585s ]
+

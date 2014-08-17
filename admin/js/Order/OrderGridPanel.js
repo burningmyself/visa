@@ -50,6 +50,7 @@ visa.OrderGridPanel = Ext.extend(Ext.grid.EditorGridPanel, {
                 items: [{
                     iconCls: 'visa-action-update',
                     tooltip : '编辑',
+                    handler: this.doEdiUserInfo,
                     scope : this,
                     width: 20
                 }, {
@@ -189,5 +190,10 @@ visa.OrderGridPanel = Ext.extend(Ext.grid.EditorGridPanel, {
                 }
             });
         }
+    },
+    
+    doEdiUserInfo: function(grid, row){
+    	var id = this.getStore().getAt(row).id;
+    	window.open('/visaadmin.php/Order/editor/id/' + id);
     }
 });

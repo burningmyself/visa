@@ -639,7 +639,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '赴美团名',
-							name: 'phone2'
+							name: 'groupname'
 						}]
 					}]
 				}/*end*/]
@@ -656,7 +656,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '最后一次访问时间?',
-							name: 'homecountry'
+							name: 'everarridate1'
 						}]
 					},{
 						columnWidth: .2,
@@ -664,7 +664,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '倒数第二次访问时间?',
-							name: ''
+							name: 'everarridate2'
 						}]
 					},{
 						columnWidth: .2,
@@ -672,7 +672,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '倒数第三次访问时间',
-							name: 'homecity'
+							name: 'everarridate3'
 						}]
 					},{
 						columnWidth: .2,
@@ -680,7 +680,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '倒数第四次访问时间',
-							name: 'homestreet'
+							name: 'everarridate4'
 						}]
 					},{
 						columnWidth: .2,
@@ -688,7 +688,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '倒数第五次访问时间',
-							name: 'zipcode'
+							name: 'everarridate5'
 						}]
 					}]
 				}/*end*/,/*start*/{
@@ -699,7 +699,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '最后一次停留时间?',
-							name: 'phone1'
+							name: 'everdays1'
 						}]
 					},{
 						columnWidth: .2,
@@ -707,7 +707,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '倒数第二次停留时间?',
-							name: 'phone2'
+							name: 'everdays2'
 						}]
 					},{
 						columnWidth: .2,
@@ -715,7 +715,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '倒数第三次停留时间?',
-							name: 'phone3'
+							name: 'everdays3'
 						}]
 					},{
 						columnWidth: .2,
@@ -723,7 +723,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '倒数第四次停留时间?',
-							name: 'email'
+							name: 'everdays4'
 						}]
 					},{
 						columnWidth: .2,
@@ -731,7 +731,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '倒数第五次停留时间?',
-							name: 'email'
+							name: 'everdays5'
 						}]
 					}]
 				}/*end*/,/*start*/{
@@ -742,7 +742,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '你是否有美国驾照?',
-							name: 'phone1'
+							name: 'haveusdriver'
 						}]
 					},{
 						columnWidth: .2,
@@ -750,7 +750,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '驾照号码?',
-							name: 'phone2'
+							name: 'driverno'
 						}]
 					},{
 						columnWidth: .2,
@@ -758,7 +758,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '驾照所属地区?',
-							name: 'phone3'
+							name: 'driverstate'
 						}]
 					}]
 				}/*end*/]
@@ -775,7 +775,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '上一次获得美国签证时间',
-							name: 'homecountry'
+							name: 'lastvisadate'
 						}]
 					},{
 						columnWidth: .2,
@@ -783,7 +783,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '签证号码',
-							name: 'homeprovince'
+							name: 'visano'
 						}]
 					},{
 						columnWidth: .2,
@@ -791,7 +791,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '此次是否申请同类签证',
-							name: 'homecity'
+							name: 'samevisatype'
 						}]
 					},{
 						columnWidth: .2,
@@ -799,7 +799,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '是否在美国领馆留过十指指纹',
-							name: 'homestreet'
+							name: 'tenprinted'
 						}]
 					}]
 				}/*end*/,/*start*/{
@@ -810,7 +810,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '你的签证是否遗失过?',
-							name: 'zipcode'
+							name: 'lostusvisa'
 						}]
 					}, {
 						columnWidth: .2,
@@ -818,7 +818,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '是哪一年遗失的?',
-							name: 'phone1'
+							name: 'lostyear'
 						}]
 					},{
 						columnWidth: .2,
@@ -826,7 +826,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '遗失的原因?',
-							name: 'phone2'
+							name: 'lostexplain'
 						}]
 					},{
 						columnWidth: .2,
@@ -834,7 +834,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '你的签证是否被注销过?',
-							name: 'phone3'
+							name: 'revokevisa'
 						}]
 					},{
 						columnWidth: .2,
@@ -842,7 +842,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '被注销的原因?',
-							name: 'email'
+							name: 'revokeexplain'
 						}] //
 					}]
 				}/*end*/,/*start*/{
@@ -854,7 +854,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '您现在申请签证的所在国家或地点同于您上个签证颁发所在国或地点吗? 此国家或地点是您主要居住地吗?',
-							name: 'zipcode'
+							name: 'countryeqcountry'
 						}]
 					}]
 				}]
@@ -870,7 +870,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '您被拒签过吗?或在入境口岸被拒入境，或被撤销入境申请?',
-							name: 'homecountry'
+							name: 'refusedvisa'
 						}]
 					},{
 						columnWidth: .7,
@@ -878,7 +878,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '解释被拒签的原因?',
-							name: 'homeprovince',
+							name: 'refusedexplain',
 							anchor : '90%'
 						}]
 					}]
@@ -891,7 +891,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '曾有人在公民及移民服务局为您申请过移民吗?',
-							name: 'phone1'
+							name: 'immigration'
 						}]
 					},{
 						columnWidth: .7,
@@ -899,7 +899,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '如有,请解释原因?',
-							name: 'phone2',
+							name: 'immigrationexpain',
 							anchor : '90%'
 						}]
 					}]
@@ -915,7 +915,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '联系人姓氏',
-							name: 'homecountry'
+							name: 'contactxing'
 						}]
 					},{
 						columnWidth: .2,
@@ -923,7 +923,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '联系人名',
-							name: 'homeprovince'
+							name: 'contactming'
 						}]
 					},{
 						columnWidth: .2,
@@ -931,7 +931,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '组织名',
-							name: 'homecity'
+							name: 'contactorganname'
 						}]
 					},{
 						columnWidth: .2,
@@ -939,7 +939,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '与您的关系',
-							name: 'homestreet'
+							name: 'contactrelation'
 						}]
 					}]
 				}/*end*/,/*start*/{
@@ -950,7 +950,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '在美联系地址(街道)',
-							name: 'phone1'
+							name: 'contactstreet'
 						}]
 					},{
 						columnWidth: .2,
@@ -958,7 +958,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '在美联系地址(城市)',
-							name: 'phone2'
+							name: 'contactcity'
 						}]
 					},{
 						columnWidth: .2,
@@ -966,7 +966,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '在美联系地址(区)',
-							name: 'phone3'
+							name: 'contactstate'
 						}]
 					}]
 				}/*end*/,/*start*/{
@@ -977,7 +977,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '在美邮编',
-							name: 'phone1'
+							name: 'contactzipcode'
 						}]
 					},{
 						columnWidth: .2,
@@ -985,7 +985,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '在美联系电话',
-							name: 'phone2'
+							name: 'contactphone'
 						}]
 					},{
 						columnWidth: .2,
@@ -993,7 +993,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '在美联系地址邮箱',
-							name: 'phone3'
+							name: 'contactemail'
 						}]
 					}]
 				}/*end*/]
@@ -1008,7 +1008,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '父亲姓氏',
-							name: 'homecountry'
+							name: 'fatherxing'
 						}]
 					},{
 						columnWidth: .2,
@@ -1016,7 +1016,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '父亲名',
-							name: 'homeprovince'
+							name: 'fatherming'
 						}]
 					},{
 						columnWidth: .2,
@@ -1024,7 +1024,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '父亲生日',
-							name: 'homecity'
+							name: 'fatherbirth'
 						}]
 					},{
 						columnWidth: .2,
@@ -1032,7 +1032,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '父亲是否在美国',
-							name: 'homestreet'
+							name: 'fatherinus'
 						}]
 					},{
 						columnWidth: .2,
@@ -1040,7 +1040,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '父亲在美国的身份?',
-							name: 'zipcode'
+							name: 'fatherstatus'
 						}]
 					}]
 				}/*end*/,/*start*/{
@@ -1051,7 +1051,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '母亲姓氏',
-							name: 'homecountry'
+							name: 'motherxing'
 						}]
 					},{
 						columnWidth: .2,
@@ -1059,7 +1059,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '母亲名',
-							name: 'homeprovince'
+							name: 'motherming'
 						}]
 					},{
 						columnWidth: .2,
@@ -1067,7 +1067,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '母亲生日',
-							name: 'homecity'
+							name: 'motherbirth'
 						}]
 					},{
 						columnWidth: .2,
@@ -1075,7 +1075,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '母亲是否在美国',
-							name: 'homestreet'
+							name: 'motherinus'
 						}]
 					},{
 						columnWidth: .2,
@@ -1083,7 +1083,69 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '母亲在美国的身份?',
-							name: 'zipcode'
+							name: 'motherstatus'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '配偶姓氏',
+							name: 'spousename'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '配偶姓名',
+							name: 'homeprovince'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '配偶生日',
+							name: 'spousedate'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '配偶国籍',
+							name: 'spousecountry'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '配偶出生国家',
+							name: 'spousebirtycountry'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '配偶出生城市',
+							name: 'spousebirtycity'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '配偶联系地址',
+							name: 'spouseaddress'
 						}]
 					}]
 				}/*end*/]
@@ -1098,7 +1160,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '亲属1姓氏',
-							name: 'homecountry'
+							name: 'zhixixing1'
 						}]
 					},{
 						columnWidth: .2,
@@ -1106,7 +1168,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '亲属1名',
-							name: 'homeprovince'
+							name: 'zhiximing1'
 						}]
 					},{
 						columnWidth: .2,
@@ -1114,7 +1176,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '亲属1与您的关系',
-							name: 'homecity'
+							name: 'zhixirelation1'
 						}]
 					},{
 						columnWidth: .2,
@@ -1122,7 +1184,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '亲属1在美身份',
-							name: 'homestreet'
+							name: 'zhixistatus1'
 						}]
 					}]
 				}/*end*/,/*start*/{
@@ -1133,7 +1195,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '亲属2姓氏',
-							name: 'homecountry'
+							name: 'zhixixing2'
 						}]
 					},{
 						columnWidth: .2,
@@ -1141,7 +1203,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '亲属2名',
-							name: 'homeprovince'
+							name: 'zhiximing2'
 						}]
 					},{
 						columnWidth: .2,
@@ -1149,7 +1211,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '亲属2与您的关系',
-							name: 'homecity'
+							name: 'zhixirelation2'
 						}]
 					},{
 						columnWidth: .2,
@@ -1157,7 +1219,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '亲属2在美身份',
-							name: 'homestreet'
+							name: 'zhixistatus2'
 						}]
 					}]
 				}/*end*/,/*start*/{
@@ -1168,7 +1230,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '亲属3姓氏',
-							name: 'homecountry'
+							name: 'zhixixing3'
 						}]
 					},{
 						columnWidth: .2,
@@ -1176,7 +1238,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '亲属3名',
-							name: 'homeprovince'
+							name: 'zhiximing3'
 						}]
 					},{
 						columnWidth: .2,
@@ -1184,7 +1246,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '亲属3与您的关系',
-							name: 'homecity'
+							name: 'zhixirelation3'
 						}]
 					},{
 						columnWidth: .2,
@@ -1192,7 +1254,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '亲属3在美身份',
-							name: 'homestreet'
+							name: 'zhixistatus3'
 						}]
 					}]
 				}/*end*/,/*start*/{
@@ -1203,7 +1265,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '亲属4姓氏',
-							name: 'homecountry'
+							name: 'zhixixing4'
 						}]
 					},{
 						columnWidth: .2,
@@ -1211,7 +1273,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '亲属4名',
-							name: 'homeprovince'
+							name: 'zhiximing4'
 						}]
 					},{
 						columnWidth: .2,
@@ -1219,7 +1281,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '亲属4与您的关系',
-							name: 'homecity'
+							name: 'zhixirelation4'
 						}]
 					},{
 						columnWidth: .2,
@@ -1227,7 +1289,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '亲属4在美身份',
-							name: 'homestreet'
+							name: 'zhixistatus4'
 						}]
 					}]
 				}/*end*/,/*start*/{
@@ -1238,7 +1300,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '亲属5姓氏',
-							name: 'homecountry'
+							name: 'zhixixing5'
 						}]
 					},{
 						columnWidth: .2,
@@ -1246,7 +1308,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '亲属5名',
-							name: 'homeprovince'
+							name: 'zhiximing5'
 						}]
 					},{
 						columnWidth: .2,
@@ -1254,7 +1316,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '亲属5与您的关系',
-							name: 'homecity'
+							name: 'zhixirelation5'
 						}]
 					},{
 						columnWidth: .2,
@@ -1262,7 +1324,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '亲属5在美身份',
-							name: 'homestreet'
+							name: 'zhixistatus5'
 						}]
 					}]
 				}/*end*/]
@@ -1277,7 +1339,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '主要职业',
-							name: 'homecountry'
+							name: 'currentwork'
 						}]
 					},{
 						columnWidth: .2,
@@ -1285,7 +1347,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '公司/学校名',
-							name: 'homeprovince'
+							name: 'currentworkname'
 						}]
 					},{
 						columnWidth: .2,
@@ -1293,7 +1355,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '所在省',
-							name: 'homecity'
+							name: 'currentstate'
 						}]
 					},{
 						columnWidth: .2,
@@ -1301,7 +1363,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '所在城市',
-							name: 'homestreet'
+							name: 'currentcity'
 						}]
 					},{
 						columnWidth: .2,
@@ -1309,7 +1371,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '所在街道',
-							name: 'zipcode'
+							name: 'currentstreet'
 						}]
 					}]
 				}/*end*/,/*start*/{
@@ -1320,7 +1382,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '邮编',
-							name: 'phone1'
+							name: 'currentzipcode'
 						}]
 					},{
 						columnWidth: .2,
@@ -1328,7 +1390,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '税前月薪',
-							name: 'phone2'
+							name: 'currentincome'
 						}]
 					},{
 						columnWidth: .2,
@@ -1336,7 +1398,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '工作职责',
-							name: 'phone3'
+							name: 'currentexplain'
 						}]
 					}]
 				}/*end*/]
@@ -1351,7 +1413,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '公司1名',
-							name: 'homecountry'
+							name: 'employname1'
 						}]
 					},{
 						columnWidth: .16,
@@ -1359,7 +1421,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '所属省',
-							name: 'homeprovince'
+							name: 'employprovince1'
 						}]
 					},{
 						columnWidth: .16,
@@ -1367,7 +1429,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '所属市',
-							name: 'homecity'
+							name: 'employcity1'
 						}]
 					},{
 						columnWidth: .16,
@@ -1375,7 +1437,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '所在街道',
-							name: 'homestreet'
+							name: 'employstreet1'
 						}]
 					},{
 						columnWidth: .16,
@@ -1383,7 +1445,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '邮编',
-							name: 'zipcode'
+							name: 'employzipcode1'
 						}]
 					},{
 						columnWidth: .16,
@@ -1391,7 +1453,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '联系电话',
-							name: 'phone1'
+							name: 'employphone1'
 						}]
 					}]
 				}/*end*/,/*start*/{
@@ -1402,7 +1464,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '职务名称',
-							name: 'phone2'
+							name: 'employjobtitle1'
 						}]
 					},{
 						columnWidth: .16,
@@ -1410,7 +1472,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '上司姓氏',
-							name: 'phone3'
+							name: 'employsuperxing1'
 						}]
 					},{
 						columnWidth: .16,
@@ -1418,7 +1480,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '上司姓名',
-							name: 'email'
+							name: 'employsuperming1'
 						}]
 					}, {
 						columnWidth: .16,
@@ -1426,7 +1488,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '入职时间',
-							name: 'phone1'
+							name: 'employstartdate1'
 						}]
 					},{
 						columnWidth: .16,
@@ -1434,7 +1496,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '离职时间',
-							name: 'phone2'
+							name: 'employsenddate1'
 						}]
 					},{
 						columnWidth: .16,
@@ -1442,7 +1504,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '工作职责',
-							name: 'phone3'
+							name: 'employdesc1'
 						}]
 					}]
 				}/*end*/,/*start*/{
@@ -1453,7 +1515,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '公司2名',
-							name: 'homecountry'
+							name: 'employname2'
 						}]
 					},{
 						columnWidth: .16,
@@ -1461,7 +1523,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '所属省',
-							name: 'homeprovince'
+							name: 'employprovince2'
 						}]
 					},{
 						columnWidth: .16,
@@ -1469,7 +1531,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '所属市',
-							name: 'homecity'
+							name: 'employcity2'
 						}]
 					},{
 						columnWidth: .16,
@@ -1477,7 +1539,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '所在街道',
-							name: 'homestreet'
+							name: 'employstreet2'
 						}]
 					},{
 						columnWidth: .16,
@@ -1485,7 +1547,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '邮编',
-							name: 'zipcode'
+							name: 'employzipcode2'
 						}]
 					},{
 						columnWidth: .16,
@@ -1493,7 +1555,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '联系电话',
-							name: 'phone1'
+							name: 'employphone2'
 						}]
 					}]
 				}/*end*/,/*start*/{
@@ -1504,7 +1566,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '职务名称',
-							name: 'phone2'
+							name: 'employjobtitle2'
 						}]
 					},{
 						columnWidth: .16,
@@ -1512,7 +1574,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '上司姓氏',
-							name: 'phone3'
+							name: 'employsuperxing2'
 						}]
 					},{
 						columnWidth: .16,
@@ -1520,7 +1582,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '上司姓名',
-							name: 'email'
+							name: 'employsuperming2'
 						}]
 					}, {
 						columnWidth: .16,
@@ -1528,7 +1590,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '入职时间',
-							name: 'phone1'
+							name: 'employstartdate2'
 						}]
 					},{
 						columnWidth: .16,
@@ -1536,7 +1598,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '离职时间',
-							name: 'phone2'
+							name: 'employsenddate2'
 						}]
 					},{
 						columnWidth: .16,
@@ -1544,7 +1606,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						items: [{
 							xtype: 'textfield',
 							fieldLabel: '工作职责',
-							name: 'phone3'
+							name: 'employdesc2'
 						}]
 					}]
 				}/*end*/]
@@ -1558,40 +1620,40 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						layout: 'form',
 						items: [{
 							xtype: 'textfield',
-							fieldLabel: '国家',
-							name: 'homecountry'
+							fieldLabel: '学校名称',
+							name: 'schoolname1'
 						}]
 					},{
 						columnWidth: .2,
 						layout: 'form',
 						items: [{
 							xtype: 'textfield',
-							fieldLabel: '省市',
-							name: 'homeprovince'
+							fieldLabel: '所学专业',
+							name: 'study1'
 						}]
 					},{
 						columnWidth: .2,
 						layout: 'form',
 						items: [{
 							xtype: 'textfield',
-							fieldLabel: '市县',
-							name: 'homecity'
+							fieldLabel: '所在国家',
+							name: 'schoolcountry1'
 						}]
 					},{
 						columnWidth: .2,
 						layout: 'form',
 						items: [{
 							xtype: 'textfield',
-							fieldLabel: '街道地址',
-							name: 'homestreet'
+							fieldLabel: '所在省',
+							name: 'schoolprovince1'
 						}]
 					},{
 						columnWidth: .2,
 						layout: 'form',
 						items: [{
 							xtype: 'textfield',
-							fieldLabel: '邮编',
-							name: 'zipcode'
+							fieldLabel: '所在城市',
+							name: 'schoolcity1'
 						}]
 					}]
 				}/*end*/,/*start*/{
@@ -1601,38 +1663,350 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						layout: 'form',
 						items: [{
 							xtype: 'textfield',
-							fieldLabel: '常用电话',
-							name: 'phone1'
+							fieldLabel: '所在街道',
+							name: 'schoolstreet1'
 						}]
 					},{
 						columnWidth: .2,
 						layout: 'form',
 						items: [{
 							xtype: 'textfield',
-							fieldLabel: '备用电话',
-							name: 'phone2'
+							fieldLabel: '邮政编码',
+							name: 'schoolzipcode1'
 						}]
 					},{
 						columnWidth: .2,
 						layout: 'form',
 						items: [{
 							xtype: 'textfield',
-							fieldLabel: '工作电话',
-							name: 'phone3'
+							fieldLabel: '入学时间',
+							name: 'schoolstartdate1'
 						}]
 					},{
 						columnWidth: .2,
 						layout: 'form',
 						items: [{
 							xtype: 'textfield',
-							fieldLabel: '电子邮箱',
-							name: 'email'
+							fieldLabel: '毕业时间',
+							name: 'schoolenddate1'
+						}]
+					}]
+				}/*end*/, /*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '学校名称',
+							name: 'schoolname2'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所学专业',
+							name: 'study2'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所在国家',
+							name: 'schoolcountry2'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所在省',
+							name: 'schoolprovince2'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所在城市',
+							name: 'schoolcity2'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所在街道',
+							name: 'schoolstreet2'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '邮政编码',
+							name: 'schoolzipcode2'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '入学时间',
+							name: 'schoolstartdate2'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '毕业时间',
+							name: 'schoolenddate2'
+						}]
+					}]
+				}/*end*/, /*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '学校名称',
+							name: 'schoolname3'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所学专业',
+							name: 'study3'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所在国家',
+							name: 'schoolcountry3'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所在省',
+							name: 'schoolprovince3'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所在城市',
+							name: 'schoolcity3'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所在街道',
+							name: 'schoolstreet3'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '邮政编码',
+							name: 'schoolzipcode3'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '入学时间',
+							name: 'schoolstartdate3'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '毕业时间',
+							name: 'schoolenddate3'
+						}]
+					}]
+				}/*end*/, /*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '学校名称',
+							name: 'schoolname4'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所学专业',
+							name: 'study4'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所在国家',
+							name: 'schoolcountry4'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所在省',
+							name: 'schoolprovince4'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所在城市',
+							name: 'schoolcity4'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所在街道',
+							name: 'schoolstreet4'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '邮政编码',
+							name: 'schoolzipcode4'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '入学时间',
+							name: 'schoolstartdate4'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '毕业时间',
+							name: 'schoolenddate4'
+						}]
+					}]
+				}/*end*/, /*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '学校名称',
+							name: 'schoolname5'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所学专业',
+							name: 'study5'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所在国家',
+							name: 'schoolcountry5'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所在省',
+							name: 'schoolprovince5'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所在城市',
+							name: 'schoolcity5'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所在街道',
+							name: 'schoolstreet5'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '邮政编码',
+							name: 'schoolzipcode5'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '入学时间',
+							name: 'schoolstartdate5'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '毕业时间',
+							name: 'schoolenddate5'
 						}]
 					}]
 				}/*end*/]
 			}/*结束*/, /*开始*/{
 				xtype: 'fieldset',
-				title: '家庭住址和联系方式',
+				title: '其他信息',
 				items: [/*start*/{
 					layout : 'column',
 					items: [{
@@ -1640,75 +2014,16 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						layout: 'form',
 						items: [{
 							xtype: 'textfield',
-							fieldLabel: '国家',
-							name: 'homecountry'
+							fieldLabel: '会说的语言',
+							name: 'language'
 						}]
 					},{
 						columnWidth: .2,
 						layout: 'form',
 						items: [{
 							xtype: 'textfield',
-							fieldLabel: '省市',
-							name: 'homeprovince'
-						}]
-					},{
-						columnWidth: .2,
-						layout: 'form',
-						items: [{
-							xtype: 'textfield',
-							fieldLabel: '市县',
-							name: 'homecity'
-						}]
-					},{
-						columnWidth: .2,
-						layout: 'form',
-						items: [{
-							xtype: 'textfield',
-							fieldLabel: '街道地址',
-							name: 'homestreet'
-						}]
-					},{
-						columnWidth: .2,
-						layout: 'form',
-						items: [{
-							xtype: 'textfield',
-							fieldLabel: '邮编',
-							name: 'zipcode'
-						}]
-					}]
-				}/*end*/,/*start*/{
-					layout : 'column',
-					items: [{
-						columnWidth: .2,
-						layout: 'form',
-						items: [{
-							xtype: 'textfield',
-							fieldLabel: '常用电话',
-							name: 'phone1'
-						}]
-					},{
-						columnWidth: .2,
-						layout: 'form',
-						items: [{
-							xtype: 'textfield',
-							fieldLabel: '备用电话',
-							name: 'phone2'
-						}]
-					},{
-						columnWidth: .2,
-						layout: 'form',
-						items: [{
-							xtype: 'textfield',
-							fieldLabel: '工作电话',
-							name: 'phone3'
-						}]
-					},{
-						columnWidth: .2,
-						layout: 'form',
-						items: [{
-							xtype: 'textfield',
-							fieldLabel: '电子邮箱',
-							name: 'email'
+							fieldLabel: '最近5年内去过的国家',
+							name: 'anycountry'
 						}]
 					}]
 				}/*end*/]

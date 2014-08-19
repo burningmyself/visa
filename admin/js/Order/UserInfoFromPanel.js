@@ -7,6 +7,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 	constructor : function(config) {
 
 		Ext.apply(config, {
+			autoScroll: true,
 			border : false,
 			bodyBorder : false,
 			labelAlign : 'right',
@@ -36,7 +37,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						layout: 'form',
 						items: [{
 							xtype: 'textfield',
-							fieldLabel: '英文姓',
+							fieldLabel: '英文姓氏',
 							name: 'enxing'
 						}]
 					},{
@@ -52,7 +53,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						layout: 'form',
 						items: [{
 							xtype: 'textfield',
-							fieldLabel: '曾用名姓',
+							fieldLabel: '曾用名姓氏',
 							name: 'cenxing'
 						}]
 					},{
@@ -594,7 +595,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						layout: 'form',
 						items: [{
 							xtype: 'textfield',
-							fieldLabel: '支付人姓',
+							fieldLabel: '支付人姓氏',
 							name: 'otherpersonxing'
 						}]
 					},{
@@ -640,6 +641,977 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 							fieldLabel: '赴美团名',
 							name: 'phone2'
 						}]
+					}]
+				}/*end*/]
+			}/*结束*/, /*开始*/{
+				xtype: 'fieldset',
+				title: '是否去过美国',
+				checkboxToggle:true,
+				collapsed: true,
+				items: [/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '最后一次访问时间?',
+							name: 'homecountry'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '倒数第二次访问时间?',
+							name: ''
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '倒数第三次访问时间',
+							name: 'homecity'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '倒数第四次访问时间',
+							name: 'homestreet'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '倒数第五次访问时间',
+							name: 'zipcode'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '最后一次停留时间?',
+							name: 'phone1'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '倒数第二次停留时间?',
+							name: 'phone2'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '倒数第三次停留时间?',
+							name: 'phone3'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '倒数第四次停留时间?',
+							name: 'email'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '倒数第五次停留时间?',
+							name: 'email'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '你是否有美国驾照?',
+							name: 'phone1'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '驾照号码?',
+							name: 'phone2'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '驾照所属地区?',
+							name: 'phone3'
+						}]
+					}]
+				}/*end*/]
+			}/*结束*/, /*开始*/{
+				xtype: 'fieldset',
+				title: '你曾经是否获得美国签证?',
+				checkboxToggle:true,
+				collapsed: true,
+				items: [/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '上一次获得美国签证时间',
+							name: 'homecountry'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '签证号码',
+							name: 'homeprovince'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '此次是否申请同类签证',
+							name: 'homecity'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '是否在美国领馆留过十指指纹',
+							name: 'homestreet'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '你的签证是否遗失过?',
+							name: 'zipcode'
+						}]
+					}, {
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '是哪一年遗失的?',
+							name: 'phone1'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '遗失的原因?',
+							name: 'phone2'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '你的签证是否被注销过?',
+							name: 'phone3'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '被注销的原因?',
+							name: 'email'
+						}] //
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: 1,
+						layout: 'form',
+						labelWidth:519,
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '您现在申请签证的所在国家或地点同于您上个签证颁发所在国或地点吗? 此国家或地点是您主要居住地吗?',
+							name: 'zipcode'
+						}]
+					}]
+				}]
+			}/*结束*/, /*开始*/{
+				xtype: 'fieldset',
+				title: '家庭住址和联系方式',
+				items: [/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .3,
+						labelWidth:300,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '您被拒签过吗?或在入境口岸被拒入境，或被撤销入境申请?',
+							name: 'homecountry'
+						}]
+					},{
+						columnWidth: .7,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '解释被拒签的原因?',
+							name: 'homeprovince',
+							anchor : '90%'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .3,
+						layout: 'form',
+						labelWidth:300,
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '曾有人在公民及移民服务局为您申请过移民吗?',
+							name: 'phone1'
+						}]
+					},{
+						columnWidth: .7,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '如有,请解释原因?',
+							name: 'phone2',
+							anchor : '90%'
+						}]
+					}]
+				}/*end*/]
+			}/*结束*/, /*开始*/{
+				xtype: 'fieldset',
+				title: '在美联系人',
+				items: [/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '联系人姓氏',
+							name: 'homecountry'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '联系人名',
+							name: 'homeprovince'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '组织名',
+							name: 'homecity'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '与您的关系',
+							name: 'homestreet'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '在美联系地址(街道)',
+							name: 'phone1'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '在美联系地址(城市)',
+							name: 'phone2'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '在美联系地址(区)',
+							name: 'phone3'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '在美邮编',
+							name: 'phone1'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '在美联系电话',
+							name: 'phone2'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '在美联系地址邮箱',
+							name: 'phone3'
+						}]
+					}]
+				}/*end*/]
+			}/*结束*/, /*开始*/{
+				xtype: 'fieldset',
+				title: '家属关系',
+				items: [/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '父亲姓氏',
+							name: 'homecountry'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '父亲名',
+							name: 'homeprovince'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '父亲生日',
+							name: 'homecity'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '父亲是否在美国',
+							name: 'homestreet'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '父亲在美国的身份?',
+							name: 'zipcode'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '母亲姓氏',
+							name: 'homecountry'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '母亲名',
+							name: 'homeprovince'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '母亲生日',
+							name: 'homecity'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '母亲是否在美国',
+							name: 'homestreet'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '母亲在美国的身份?',
+							name: 'zipcode'
+						}]
+					}]
+				}/*end*/]
+			}/*结束*/, /*开始*/{
+				xtype: 'fieldset',
+				title: '是否有其他直系亲属在美国?',
+				items: [/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '亲属1姓氏',
+							name: 'homecountry'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '亲属1名',
+							name: 'homeprovince'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '亲属1与您的关系',
+							name: 'homecity'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '亲属1在美身份',
+							name: 'homestreet'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '亲属2姓氏',
+							name: 'homecountry'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '亲属2名',
+							name: 'homeprovince'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '亲属2与您的关系',
+							name: 'homecity'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '亲属2在美身份',
+							name: 'homestreet'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '亲属3姓氏',
+							name: 'homecountry'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '亲属3名',
+							name: 'homeprovince'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '亲属3与您的关系',
+							name: 'homecity'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '亲属3在美身份',
+							name: 'homestreet'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '亲属4姓氏',
+							name: 'homecountry'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '亲属4名',
+							name: 'homeprovince'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '亲属4与您的关系',
+							name: 'homecity'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '亲属4在美身份',
+							name: 'homestreet'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '亲属5姓氏',
+							name: 'homecountry'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '亲属5名',
+							name: 'homeprovince'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '亲属5与您的关系',
+							name: 'homecity'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '亲属5在美身份',
+							name: 'homestreet'
+						}]
+					}]
+				}/*end*/]
+			}/*结束*/, /*开始*/{
+				xtype: 'fieldset',
+				title: '工作/学校相关信息',
+				items: [/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '主要职业',
+							name: 'homecountry'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '公司/学校名',
+							name: 'homeprovince'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所在省',
+							name: 'homecity'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所在城市',
+							name: 'homestreet'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所在街道',
+							name: 'zipcode'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '邮编',
+							name: 'phone1'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '税前月薪',
+							name: 'phone2'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '工作职责',
+							name: 'phone3'
+						}]
+					}]
+				}/*end*/]
+			}/*结束*/, /*开始*/{
+				xtype: 'fieldset',
+				title: '以前的工作',
+				items: [/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '公司1名',
+							name: 'homecountry'
+						}]
+					},{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所属省',
+							name: 'homeprovince'
+						}]
+					},{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所属市',
+							name: 'homecity'
+						}]
+					},{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所在街道',
+							name: 'homestreet'
+						}]
+					},{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '邮编',
+							name: 'zipcode'
+						}]
+					},{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '联系电话',
+							name: 'phone1'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '职务名称',
+							name: 'phone2'
+						}]
+					},{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '上司姓氏',
+							name: 'phone3'
+						}]
+					},{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '上司姓名',
+							name: 'email'
+						}]
+					}, {
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '入职时间',
+							name: 'phone1'
+						}]
+					},{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '离职时间',
+							name: 'phone2'
+						}]
+					},{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '工作职责',
+							name: 'phone3'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '公司2名',
+							name: 'homecountry'
+						}]
+					},{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所属省',
+							name: 'homeprovince'
+						}]
+					},{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所属市',
+							name: 'homecity'
+						}]
+					},{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '所在街道',
+							name: 'homestreet'
+						}]
+					},{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '邮编',
+							name: 'zipcode'
+						}]
+					},{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '联系电话',
+							name: 'phone1'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '职务名称',
+							name: 'phone2'
+						}]
+					},{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '上司姓氏',
+							name: 'phone3'
+						}]
+					},{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '上司姓名',
+							name: 'email'
+						}]
+					}, {
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '入职时间',
+							name: 'phone1'
+						}]
+					},{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '离职时间',
+							name: 'phone2'
+						}]
+					},{
+						columnWidth: .16,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '工作职责',
+							name: 'phone3'
+						}]
+					}]
+				}/*end*/]
+			}/*结束*/, /*开始*/{
+				xtype: 'fieldset',
+				title: '学业信息',
+				items: [/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '国家',
+							name: 'homecountry'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '省市',
+							name: 'homeprovince'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '市县',
+							name: 'homecity'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '街道地址',
+							name: 'homestreet'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '邮编',
+							name: 'zipcode'
+						}]
+					}]
+				}/*end*/,/*start*/{
+					layout : 'column',
+					items: [{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '常用电话',
+							name: 'phone1'
+						}]
+					},{
+						columnWidth: .2,
+						layout: 'form',
+						items: [{
+							xtype: 'textfield',
+							fieldLabel: '备用电话',
+							name: 'phone2'
+						}]
 					},{
 						columnWidth: .2,
 						layout: 'form',
@@ -676,7 +1648,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						layout: 'form',
 						items: [{
 							xtype: 'textfield',
-							fieldLabel: '省/市',
+							fieldLabel: '省市',
 							name: 'homeprovince'
 						}]
 					},{
@@ -684,7 +1656,7 @@ visa.UserInfoFromPanel = Ext.extend(Ext.form.FormPanel, {
 						layout: 'form',
 						items: [{
 							xtype: 'textfield',
-							fieldLabel: '市/县',
+							fieldLabel: '市县',
 							name: 'homecity'
 						}]
 					},{

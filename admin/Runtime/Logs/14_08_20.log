@@ -1,0 +1,206 @@
+[ 2014-08-20T13:03:59+08:00 ] 127.0.0.1 /visaadmin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.044455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.067617s ]
+SQL: SHOW COLUMNS FROM `visa_question` [ RunTime:0.291477s ]
+SQL: SELECT * FROM `visa_question`  [ RunTime:0.170124s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.210367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.210629s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.026638s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002365s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001220s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001669s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.032636s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002124s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002336s ]
+
+[ 2014-08-20T13:04:02+08:00 ] 127.0.0.1 /visaadmin.php/Question/read
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.032978s ]
+INFO: [ route_check ] --END-- [ RunTime:0.033148s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001886s ]
+SQL: SHOW COLUMNS FROM `visa_question` [ RunTime:0.033588s ]
+SQL: SELECT * FROM `visa_question` LIMIT 0,20   [ RunTime:0.001245s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visa_question` LIMIT 1   [ RunTime:0.021248s ]
+
+[ 2014-08-20T13:04:06+08:00 ] 127.0.0.1 /visaadmin.php/Order/read
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000867s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+SQL: SHOW COLUMNS FROM `visa_userinfo` [ RunTime:0.135323s ]
+SQL: SELECT * FROM `visa_userinfo` LIMIT 0,20   [ RunTime:0.036400s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visa_userinfo` LIMIT 1   [ RunTime:0.000370s ]
+
+[ 2014-08-20T13:04:08+08:00 ] 127.0.0.1 /visaadmin.php/Order/editor/id/1001
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001234s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001422s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.299981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.300167s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001097s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001114s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001069s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.005116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008920s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001602s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001806s ]
+
+[ 2014-08-20T13:04:09+08:00 ] 127.0.0.1 /visaadmin.php/Order/queryById
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001340s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001485s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+SQL: SHOW COLUMNS FROM `visa_userinfo` [ RunTime:0.074990s ]
+SQL: SELECT * FROM `visa_userinfo` WHERE ( `id` = 1001 ) LIMIT 1   [ RunTime:0.100181s ]
+NOTIC: [2048] Non-static method HttpClient::quickPost() should not be called statically, assuming $this from incompatible context G:\GitHubSpace\visa\admin\Lib\Action\OrderAction.class.php 第 26 行.
+
+[ 2014-08-20T13:06:58+08:00 ] 127.0.0.1 /visaadmin.php/Order/editor/id/1001
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001329s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001570s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009928s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000775s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000708s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000586s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000829s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003224s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000859s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000972s ]
+
+[ 2014-08-20T13:06:58+08:00 ] 127.0.0.1 /visaadmin.php/Order/queryById
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000840s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001003s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+SQL: SHOW COLUMNS FROM `visa_userinfo` [ RunTime:0.006434s ]
+SQL: SELECT * FROM `visa_userinfo` WHERE ( `id` = 1001 ) LIMIT 1   [ RunTime:0.001009s ]
+NOTIC: [2048] Non-static method HttpClient::quickPost() should not be called statically, assuming $this from incompatible context G:\GitHubSpace\visa\admin\Lib\Action\OrderAction.class.php 第 26 行.
+
+[ 2014-08-20T13:07:09+08:00 ] 127.0.0.1 /visaadmin.php/Order/editor/id/1001
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000838s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008104s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000471s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000601s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000373s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002360s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000733s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2014-08-20T13:07:09+08:00 ] 127.0.0.1 /visaadmin.php/Order/queryById
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001293s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001438s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+SQL: SHOW COLUMNS FROM `visa_userinfo` [ RunTime:0.006202s ]
+SQL: SELECT * FROM `visa_userinfo` WHERE ( `id` = 1001 ) LIMIT 1   [ RunTime:0.001050s ]
+NOTIC: [2048] Non-static method HttpClient::quickPost() should not be called statically, assuming $this from incompatible context G:\GitHubSpace\visa\admin\Lib\Action\OrderAction.class.php 第 26 行.
+
+[ 2014-08-20T13:07:13+08:00 ] 127.0.0.1 /visaadmin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+SQL: SHOW COLUMNS FROM `visa_question` [ RunTime:0.002464s ]
+SQL: SELECT * FROM `visa_question`  [ RunTime:0.004840s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011246s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003606s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000754s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000833s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010456s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001008s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001275s ]
+
+[ 2014-08-20T13:07:14+08:00 ] 127.0.0.1 /visaadmin.php/Question/read
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000856s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001015s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+SQL: SHOW COLUMNS FROM `visa_question` [ RunTime:0.002647s ]
+SQL: SELECT * FROM `visa_question` LIMIT 0,20   [ RunTime:0.002155s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visa_question` LIMIT 1   [ RunTime:0.000574s ]
+
+[ 2014-08-20T13:07:16+08:00 ] 127.0.0.1 /visaadmin.php/Order/read
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001364s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001553s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+SQL: SHOW COLUMNS FROM `visa_userinfo` [ RunTime:0.006540s ]
+SQL: SELECT * FROM `visa_userinfo` LIMIT 0,20   [ RunTime:0.000963s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visa_userinfo` LIMIT 1   [ RunTime:0.000228s ]
+
+[ 2014-08-20T13:07:18+08:00 ] 127.0.0.1 /visaadmin.php/Order/editor/id/1001
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001010s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001100s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008529s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000519s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000518s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000359s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003287s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000763s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000879s ]
+
+[ 2014-08-20T13:07:19+08:00 ] 127.0.0.1 /visaadmin.php/Order/queryById
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000836s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `visa_userinfo` [ RunTime:0.006635s ]
+SQL: SELECT * FROM `visa_userinfo` WHERE ( `id` = 1001 ) LIMIT 1   [ RunTime:0.002256s ]
+NOTIC: [2048] Non-static method HttpClient::quickPost() should not be called statically, assuming $this from incompatible context G:\GitHubSpace\visa\admin\Lib\Action\OrderAction.class.php 第 26 行.
+

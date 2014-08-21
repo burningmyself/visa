@@ -1,0 +1,81 @@
+[ 2014-08-21T10:02:45+08:00 ] 127.0.0.1 /visaadmin.php/Order/editor/id/1001
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.264927s ]
+INFO: [ route_check ] --END-- [ RunTime:0.307224s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.029744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029898s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.568538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.568720s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.062310s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.015083s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000873s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.080008s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001817s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002134s ]
+
+[ 2014-08-21T10:02:57+08:00 ] 127.0.0.1 /visaadmin.php/Order/queryById
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001294s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001440s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+SQL: SHOW COLUMNS FROM `visa_userinfo` [ RunTime:0.328800s ]
+SQL: SELECT * FROM `visa_userinfo` WHERE ( `id` = 1001 ) LIMIT 1   [ RunTime:0.145675s ]
+NOTIC: [2048] Non-static method HttpClient::quickPost() should not be called statically, assuming $this from incompatible context G:\GitHubSpace\visa\admin\Lib\Action\OrderAction.class.php 第 26 行.
+
+[ 2014-08-21T11:52:29+08:00 ] 127.0.0.1 /visaadmin.php/Order/editor/id/1001
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.012778s ]
+INFO: [ route_check ] --END-- [ RunTime:0.020996s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001336s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.384298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.384746s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001626s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001864s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001314s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007926s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001945s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002188s ]
+
+[ 2014-08-21T11:52:33+08:00 ] 127.0.0.1 /visaadmin.php/Order/queryById
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001486s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001637s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+SQL: SHOW COLUMNS FROM `visa_userinfo` [ RunTime:0.373571s ]
+SQL: SELECT * FROM `visa_userinfo` WHERE ( `id` = 1001 ) LIMIT 1   [ RunTime:0.113810s ]
+NOTIC: [2048] Non-static method HttpClient::quickPost() should not be called statically, assuming $this from incompatible context G:\GitHubSpace\visa\admin\Lib\Action\OrderAction.class.php 第 26 行.
+
+[ 2014-08-21T17:28:21+08:00 ] 127.0.0.1 /visaadmin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.072713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.133971s ]
+SQL: SHOW COLUMNS FROM `visa_question` [ RunTime:0.227912s ]
+SQL: SELECT * FROM `visa_question`  [ RunTime:0.169273s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.171451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.171712s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.007545s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002226s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002718s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001858s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014968s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002391s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002695s ]
+

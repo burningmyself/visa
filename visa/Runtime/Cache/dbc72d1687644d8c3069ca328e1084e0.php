@@ -699,6 +699,7 @@
                                 <input type="text" class="form-control" name="contactusername" placeholder="Username">
                                 <span class="input-group-addon">或组织名称</span>
                                 <input type="text" class="form-control" name="" placeholder="Username">
+                             </div>
                         </div><!--/row-->
 
                         <div class="row">
@@ -708,8 +709,13 @@
                                 <input type="text" class="form-control" name="contactstate"  placeholder="Username">
                                 <span class="input-group-addon">城市</span>
                                 <input type="text" class="form-control" name="contactcity"  placeholder="Username">
-                                <span class="input-group-addon">街道,单元号码</span>
+                                <span class="input-group-addon">街道</span>
                                 <input type="text" class="form-control" name="contactstreet"  placeholder="Username">
+                            </div>
+                        </div><!--/row-->
+
+                        <div class="row">
+                            <div class="input-group">
                                 <span class="input-group-addon">邮编</span>
                                 <input type="text" class="form-control" name="contactzipcode"  placeholder="Username">
                                 <span class="input-group-addon">电话</span>
@@ -719,7 +725,6 @@
                             </div>
                         </div><!--/row-->
 
-                    </div>
                     </div>
 				</div>
 

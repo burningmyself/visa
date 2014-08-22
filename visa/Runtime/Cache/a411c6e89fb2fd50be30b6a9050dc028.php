@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
+    <title>赴美签证|拒签零服务费|签证|VISA|HELLO-VISA</title>
     <meta charset="utf-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/visa/Tpl/img/favicon.ico" type="image/x-icon">
@@ -32,14 +32,13 @@
     <script>	
         $(window).load( function(){							
     	   jQuery('.camera_wrap').camera();	 
-           	 
         });
     </script>
     
     <!--[if lt IE 9]>
     <div style='text-align:center'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div>  
-    <script src="assets/assets//visa/Tpl/js/html5shiv.js"></script> 
-    <script src="assets/assets//visa/Tpl/js/respond.min.js"></script>
+    <script src="/visa/Tpl/assets/assets/js/html5shiv.js"></script> 
+    <script src="/visa/Tpl/assets/assets/js/respond.min.js"></script>
   <![endif]-->
 </head>
 
